@@ -9,6 +9,9 @@
 #include <QNetworkRequest>
 #include <QNetworkAccessManager>
 
+namespace Common
+{
+
 using ReplyPtr = QSharedPointer<QNetworkReply>;
 
 enum class RequestMethod
@@ -35,12 +38,16 @@ public:
     bool perform(const Request &req);
 
 protected slots:
-    void onFinished(QNetworkReply * reply);
+    void onFinished();
+    void onFailed();
 
 signals:
     void finished(const QJsonObject &replyJson); // mb QString
+    void finished(const QString &rawReply);
     void failed();
 
 private:
-
+    QList<QNetworkReply *> m_replies;
 };
+
+} // Common

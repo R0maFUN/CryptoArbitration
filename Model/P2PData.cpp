@@ -1,5 +1,7 @@
 #include "P2PData.h"
 
+using namespace Model;
+
 P2PData::P2PData()
 {
 

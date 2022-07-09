@@ -1,5 +1,12 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>SpotDataListItem.qml</file>
+        <file>Label.qml</file>
+        <file>Base.qml</file>
+        <file>SpotDataList.qml</file>
+        <file>DropDownCombobox.qml</file>
+        <file>TextFieldWithLabel.qml</file>
+        <file>PrimaryButton.qml</file>
     </qresource>
 </RCC>

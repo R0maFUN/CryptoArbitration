@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="star-icon-active">images/star-icon-active.png</file>
+        <file alias="star-icon-active@2x">images/star-icon-active@2x.png</file>
+        <file alias="star-icon-inactive">images/star-icon-inactive.png</file>
+        <file alias="star-icon-inactive@2x">images/star-icon-inactive@2x.png</file>
+        <file alias="btc-icon">images/crypto-icons/bitcoin-logo.png</file>
+        <file alias="usdt-icon">images/crypto-icons/tether-logo.png</file>
+        <file alias="eth-icon">images/crypto-icons/ethereum-logo.png</file>
+        <file alias="usdc-icon">images/crypto-icons/usdc-logo.png</file>
+        <file alias="bnb-icon">images/crypto-icons/bnb-logo.png</file>
+        <file alias="sol-icon">images/crypto-icons/sol-logo.png</file>
+        <file alias="ada-icon">images/crypto-icons/ada-logo.png</file>
+        <file alias="busd-icon">images/crypto-icons/busd-logo.png</file>
+        <file alias="ltc-icon">images/crypto-icons/ltc-logo.png</file>
+        <file alias="xrp-icon">images/crypto-icons/xrp-logo.png</file>
+        <file alias="doge-icon">images/crypto-icons/doge-logo.png</file>
+        <file alias="default-icon">images/crypto-icons/default-logo.png</file>
+        <file alias="binance-icon">images/exchanges-icons/binance-logo.png</file>
+        <file alias="arrow-both-icon">images/icons/arrow-both.png</file>
+        <file alias="arrow-both-icon@2x">images/icons/arrow-both@2x.png</file>
+    </qresource>
+</RCC>

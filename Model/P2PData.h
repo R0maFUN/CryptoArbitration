@@ -3,14 +3,17 @@
 #include <QObject>
 #include <QSharedPointer>
 
-#include "CommonDataStructures.h"
+#include "Common/CommonDataStructures.h"
+
+namespace Model
+{
 
 struct P2PDataPair
 {
-    CryptoCoins cryptoCoin;
-    FiatCoins fiatCoin;
+    Common::CryptoCoin cryptoCoin;
+    Common::FiatCoin fiatCoin;
     double price;
-    PayMethod payMethod;
+    Common::PayMethod payMethod;
     // double tax
 };
 
@@ -20,7 +23,7 @@ public:
     P2PData();
 
     virtual void update() = 0; // makes request
-    virtual void initFromJson(const QJsonObject &jsonObject); // after succeeded request
+    virtual void initFromJson(const QJsonObject &jsonObject) = 0; // after succeeded request
 
     QList<P2PDataPair> getData() const;
 
@@ -29,3 +32,5 @@ private:
 };
 
 using P2PDataPtr = QSharedPointer<P2PData>;
+
+} // Model

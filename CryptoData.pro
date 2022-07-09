@@ -7,15 +7,22 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        MainViewModel.cpp \
-        P2PData.cpp \
-        RequestsPerformer.cpp \
-        ServiceData.cpp \
-        SpotData.cpp \
-        TestViewModel.cpp \
+        Common/CommonDataStructures.cpp \
+        Common/ListModel.cpp \
+        Common/RequestsPerformer.cpp \
+        Model/MainModel.cpp \
+        Model/P2PData.cpp \
+        Model/SettingsModel.cpp \
+        Model/SpotDataModel.cpp \
+        ViewModel/MainViewModel.cpp \
+        ViewModel/SettingsViewModel.cpp \
+        ViewModel/SpotData.cpp \
+        ViewModel/SpotDataStorage.cpp \
+        ViewModel/TestViewModel.cpp \
         main.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    image.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -29,10 +36,16 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    CommonDataStructures.h \
-    MainViewModel.h \
-    P2PData.h \
-    RequestsPerformer.h \
-    ServiceData.h \
-    SpotData.h \
-    TestViewModel.h
+    Common/CommonDataStructures.h \
+    Common/ListModel.h \
+    Common/RequestsPerformer.h \
+    Model/MainModel.h \
+    Model/P2PData.h \
+    Model/SettingsModel.h \
+    Model/SpotDataModel.h \
+    ViewModel/MainViewModel.h \
+    ViewModel/SettingsViewModel.h \
+    ViewModel/SpotData.h \
+    ViewModel/SpotDataStorage.h \
+    ViewModel/TestViewModel.h
+
